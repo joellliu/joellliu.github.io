@@ -20,20 +20,19 @@
               <p style="text-align:center">
                 <name>Jiang Liu</name>
               </p>
-              <p>I am a third-year PhD student at <a href="https://engineering.jhu.edu/ece/">Department of Electrical and Computer Engineering</a>, <a href="https://www.jhu.edu/">Johns Hopkins University</a> (JHU),
+              <p>I am a PhD student at <a href="https://engineering.jhu.edu/ece/">Department of Electrical and Computer Engineering</a>, <a href="https://www.jhu.edu/">Johns Hopkins University</a> (JHU),
                 advised by <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">Prof. Rama Chellappa</a>.
                 I received my MSE degree from JHU in 2022, and BSE degree from <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a> in 2019 advised by <a href="http://ivg.au.tsinghua.edu.cn/~jfeng/">Prof. Jianjiang Feng</a>
                 and <a href="https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en">Prof. Jie Zhou</a>.
               </p>
               <p style="text-align:center">
                 <a href="mailto:jiangliu@jhu.edu">Email</a> &nbsp/&nbsp
-                <a href="data/jiangliu-CV.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=IbeXR9cAAAAJ">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://github.com/joellliu/">Github</a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/jiangliu.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/jiangliu.jpg" class="hoverZoomLink"></a>
+              <a href="images/jiangliu.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/photo.png" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
@@ -50,8 +49,112 @@
             </td>
           </tr>
         </tbody></table>
+                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Selected Publications</heading>
+            </td>
+          </tr>
+        </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-					
+         <tr onmouseout="sac_stop()" onmouseover="sac_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id="sac_image" style="opacity: 1;">
+                <img src="./images/sac_1.png" width="160"></div>
+              <img src="./images/sac_2.png" width="160">
+            </div>
+            <script type="text/javascript">
+              function sac_start() {
+                document.getElementById('sac_image').style.opacity = "0";
+              }
+
+              function sac_stop() {
+                document.getElementById('sac_image').style.opacity = "1";
+              }
+              sac_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://openaccess.thecvf.com/content/CVPR2022/html/Liu_Segment_and_Complete_Defending_Object_Detectors_Against_Adversarial_Patch_Attacks_CVPR_2022_paper.html">
+              <papertitle> Segment and Complete: Defending Object Detectors Against Adversarial Patch Attacks With Robust Patch Detection
+              </papertitle>
+            </a>
+            <br>
+            <strong>Jiang Liu</strong>,
+            Chun Pong Lau,
+            Hossein Souri,
+            Soheil Feizi,
+            Rama Chellappa
+            <br>
+            <em>CVPR</em>, 2022
+            <br>
+            <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Liu_Segment_and_Complete_Defending_Object_Detectors_Against_Adversarial_Patch_Attacks_CVPR_2022_paper.pdf">PDF</a> /
+            <a href="https://openaccess.thecvf.com/content/CVPR2022/supplemental/Liu_Segment_and_Complete_CVPR_2022_supplemental.pdf">Supp</a> /
+            <a href="https://arxiv.org/abs/2112.04532">arXiv</a> /
+            <a href="bibs/Liu_2022_CVPR.bib">bibtex</a> /
+            <a href="https://github.com/joellliu/SegmentAndComplete">code</a> /
+            <a href="https://aiem.jhu.edu/datasets/apricot-mask">Apricot-Mask Dataset</a>
+            <!-- <a href="https://github.com/hsouri/Sleeper-Agent">code</a> -->
+<!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
+            <br>
+            <p></p>
+            <p>
+              In this paper, we propose Segment and Complete defense (SAC),
+              a general framework for defending object detectors against patch attacks
+              through detection and removal of adversarial patches.
+              Our experiments on COCO and xView datasets demonstrate that SAC achieves superior robustness even
+              under strong adaptive attacks with no reduction in performance on clean images, and generalizes well to
+              unseen patch shapes, attack budgets, and unseen attack methods. Furthermore, we present the APRICOT-Mask
+              dataset, which augments the APRICOT dataset with pixel-level annotations of adversarial patches. </p>
+          </td>
+        </tr>
+        <tr onmouseout="sac_stop()" onmouseover="sac_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id="mat_image" style="opacity: 1;">
+                <img src="./images/MAT.png" width="160"></div>
+              <img src="./images/MAT.png" width="160">
+            </div>
+            <script type="text/javascript">
+              function mat_start() {
+                document.getElementById('mat_image').style.opacity = "0";
+              }
+
+              function mat_stop() {
+                document.getElementById('mat_image').style.opacity = "1";
+              }
+              mat_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://ieeexplore.ieee.org/document/9798870">
+              <papertitle> Mutual Adversarial Training: Learning together is better than going alone
+              </papertitle>
+            </a>
+            <br>
+            <strong>Jiang Liu</strong>,
+            Chun Pong Lau,
+            Hossein Souri,
+            Soheil Feizi,
+            Rama Chellappa
+            <br>
+            <em>IEEE Transactions on Information Forensics and Security (TIFS)</em>, 2022
+            <br>
+            <a href="https://arxiv.org/pdf/2112.05005.pdf">PDF</a> /
+            <a href="https://arxiv.org/abs/2112.05005">arXiv</a> /
+            <a href="bibs/Liu_2022_mutual.bib">bibtex</a>
+            <br>
+            <p></p>
+            <p>
+              In this paper, we propose mutual adversarial training (MAT), in which multiple models are trained
+              together and share the knowledge of adversarial examples to achieve improved robustness.
+              MAT allows robust models to explore a larger space of adversarial samples, and
+              find more robust feature spaces and decision boundaries. We show that MAT can improve model robustness for
+              both <strong>single</strong> and <strong>multiple</strong> perturbations. </p>
+          </td>
+        </tr>
+
 
 						
 
