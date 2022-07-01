@@ -22,8 +22,16 @@
               </p>
               <p>I am a PhD student at <a href="https://engineering.jhu.edu/ece/">Department of Electrical and Computer Engineering</a>, <a href="https://www.jhu.edu/">Johns Hopkins University</a> (JHU),
                 advised by <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">Prof. Rama Chellappa</a>.
+                I am a member of <a href="https://aiem.jhu.edu">AIEM lab </a>, and  <a href=https://www.cis.jhu.edu/> CIS</a>.
                 I received my MSE degree from JHU in 2022, and BSE degree from <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a> in 2019 advised by <a href="http://ivg.au.tsinghua.edu.cn/~jfeng/">Prof. Jianjiang Feng</a>
                 and <a href="https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en">Prof. Jie Zhou</a>.
+
+                I'm currently an Applied Scientis Intern at Amazon AWS AI working on vision-language problem mentored by
+                <a href="huiding.org">Dr. Hui Ding</a>,
+                <a href="https://zhaoweicai.github.io/">Dr. Zhaowei Cai</a>, and
+                <a href="https://www.ytzhang.net/">Dr. Yuting Zhang</a>. I've also worked as a Deep Learning Research Scientist Intern
+                at <a href="https://subtlemedical.com/">Subtle Medical</a> developing novel Transformed-based magnetic resonance imaging (MRI) algorithms.
+
               </p>
               <p style="text-align:center">
                 <a href="mailto:jiangliu@jhu.edu">Email</a> &nbsp/&nbsp
@@ -82,10 +90,7 @@
             </a>
             <br>
             <strong>Jiang Liu</strong>,
-            Chun Pong Lau,
-            Hossein Souri,
-            Soheil Feizi,
-            Rama Chellappa
+            Alexander Levine, Chun Pong Lau, Rama Chellappa, Soheil Feizi
             <br>
             <em>CVPR</em>, 2022
             <br>
@@ -109,7 +114,7 @@
               dataset, which augments the APRICOT dataset with pixel-level annotations of adversarial patches. </p>
           </td>
         </tr>
-        <tr onmouseout="sac_stop()" onmouseover="sac_start()">
+        <tr onmouseout="mat_stop()" onmouseover="mat_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
               <div class="two" id="mat_image" style="opacity: 1;">
@@ -152,6 +157,93 @@
               MAT allows robust models to explore a larger space of adversarial samples, and
               find more robust feature spaces and decision boundaries. We show that MAT can improve model robustness for
               both <strong>single</strong> and <strong>multiple</strong> perturbations. </p>
+          </td>
+        </tr>
+
+         <tr onmouseout="mmt_stop()" onmouseover="mmt_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id="mmt_image" style="opacity: 1;">
+                <img src="./images/mmt_2.png" width="160"></div>
+              <img src="./images/mmt_1.png" width="160">
+            </div>
+            <script type="text/javascript">
+              function mmt_start() {
+                document.getElementById('mmt_image').style.opacity = "0";
+              }
+
+              function mmt_stop() {
+                document.getElementById('mmt_image').style.opacity = "1";
+              }
+              mmt_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2204.13738">
+              <papertitle> One Model to Synthesize Them All: Multi-contrast Multi-scale Transformer for Missing Data Imputation
+              </papertitle>
+            </a>
+            <br>
+            <strong>Jiang Liu</strong>,
+            Srivathsa Pasumarthi, Ben Duffy, Enhao Gong, Greg Zaharchuk, Keshav Datta
+            <br>
+            <em>Arxiv</em>, 2022
+            <br>
+            <a href="https://arxiv.org/pdf/2204.13738.pdf">PDF</a> /
+            <a href="https://arxiv.org/abs/2204.13738">arXiv</a> /
+            <a href="bibs/Liu_2022_one.bib">bibtex</a>
+            <br>
+            <p></p>
+            <p>
+              In this paper, we formulate missing data imputation as a sequence-to-sequence learning problem and
+              propose a multi-contrast multi-scale Transformer (MMT), which can take <em>any</em> subset of input contrasts and
+              synthesize those that are missing. Thanks to the proposed multi-contrast Swin Transformer blocks,
+              it can efficiently capture intra- and inter-contrast dependencies for accurate image synthesis.
+              Moreover, MMT is inherently <strong>interpretable</strong> . It allows us to understand the importance of each
+              input contrast in different regions by analyzing the in-built attention maps of Transformer blocks in the decoder.
+          </td>
+        </tr>
+
+        <tr onmouseout="ijsat_stop()" onmouseover="ijsat_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id="ijsat_image" style="opacity: 1;">
+                <img src="./images/ijsat_1.png" width="160"></div>
+              <img src="./images/ijsat_2.png" width="160">
+            </div>
+            <script type="text/javascript">
+              function ijsat_start() {
+                document.getElementById('ijsat_image').style.opacity = "0";
+              }
+
+              function ijsat_stop() {
+                document.getElementById('ijsat_image').style.opacity = "1";
+              }
+              ijsat_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2112.06323">
+              <papertitle> Interpolated Joint Space Adversarial Training for Robust and Generalizable Defenses
+              </papertitle>
+            </a>
+            <br>
+            Chun Pong Lau,
+            <strong>Jiang Liu</strong>,
+            Hossein Souri, Wei-An Lin, Soheil Feizi, Rama Chellappa
+            <br>
+            <em>Arxiv</em>, 2021
+            <br>
+            <a href="https://arxiv.org/pdf/2112.06323.pdf">PDF</a> /
+            <a href="https://arxiv.org/abs/2112.06323">arXiv</a> /
+            <a href="bibs/lau_2021_ijsat.bib">bibtex</a>
+            <br>
+            <p></p>
+            <p>
+              We propose a novel threat model called Joint Space Threat Model (JSTM), which exploit the underlying manifold information with Normalizing Flow,
+              ensuring that exact manifold assumption holds. Under JSTM, we develop novel adversarial attacks and defenses. Furthermore,
+              we propose the Robust Mixup strategy in which we maximize the adversity of the interpolated images and gain robustness and prevent
+              overfitting.
           </td>
         </tr>
 
