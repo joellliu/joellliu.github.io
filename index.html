@@ -29,7 +29,7 @@
 
               </p>
               <p>
-                I'm currently an Applied Scientis Intern at Amazon AWS AI working on vision-language problem mentored by
+                In summer 2022, I worked as an Applied Scientis Intern at Amazon AWS AI working on vision-language problem mentored by
                 <a href="huiding.org">Dr. Hui Ding</a>,
                 <a href="https://zhaoweicai.github.io/">Dr. Zhaowei Cai</a>, and
                 <a href="https://www.ytzhang.net/">Dr. Yuting Zhang</a>. I've also worked as a Deep Learning Research Scientist Intern
@@ -69,6 +69,49 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                 <tr onmouseout="poly_stop()" onmouseover="poly_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id="poly_image" style="opacity: 1;">
+                <img src="./images/poly_1.png" width="160"></div>
+              <img src="./images/poly_2.png" width="160">
+            </div>
+            <script type="text/javascript">
+              function sac_start() {
+                document.getElementById('poly_image').style.opacity = "0";
+              }
+
+              function sac_stop() {
+                document.getElementById('poly_image').style.opacity = "1";
+              }
+              sac_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2302.07387">
+              <papertitle> PolyFormer: Referring Image Segmentation as Sequential Polygon Generation
+              </papertitle>
+            </a>
+            <br>
+            <strong>Jiang Liu*</strong>, Hui Ding*, Zhaowei Cai, Yuting Zhang, Ravi Kumar Satzoda, Vijay Mahadevan, R. Manmatha (*equal contribution)
+            <br>
+            <em>CVPR</em>, 2023
+            <br>
+            <a href="https://joellliu.github.io/polyformer">Project Page</a> /
+            <a href="https://arxiv.org/abs/2302.07387">arXiv</a> /
+            <a href="bibs/Liu_2023_CVPR.bib">bibtex</a> /
+            <!-- <a href="https://github.com/hsouri/Sleeper-Agent">code</a> -->
+<!--             <a href="https://github.com/hsouri/hsouri.github.io/blob/master/Data/khorramshahi2020gans.bib">bibtex</a> -->
+            <br>
+            <p></p>
+            <p>
+              In this work, instead of directly predicting the pixel-level segmentation masks, the problem of referring
+              image segmentation is formulated as sequential polygon generation, and the predicted polygons can be later
+              converted into segmentation masks. This is enabled by a new sequence-to-sequence framework, Polygon
+              Transformer (PolyFormer), which takes a sequence of image patches and text query tokens as input,
+              and outputs a sequence of polygon vertices autoregressively. </p>
+          </td>
+        </tr>
          <tr onmouseout="sac_stop()" onmouseover="sac_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
