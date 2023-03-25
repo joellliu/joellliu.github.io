@@ -69,7 +69,55 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-                 <tr onmouseout="poly_stop()" onmouseover="poly_start()">
+
+                 <tr onmouseout="mmt_stop()" onmouseover="mmt_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id="mmt_image" style="opacity: 1;">
+                <img src="./images/mmt_1.png" width="160"></div>
+              <img src="./images/mmt_2.png" width="160">
+            </div>
+            <script type="text/javascript">
+              function mmt_start() {
+                document.getElementById('mmt_image').style.opacity = "0";
+              }
+
+              function mmt_stop() {
+                document.getElementById('mmt_image').style.opacity = "1";
+              }
+              mmt_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2204.13738">
+              <papertitle> One Model to Synthesize Them All: Multi-contrast Multi-scale Transformer for Missing Data Imputation
+              </papertitle>
+            </a>
+            <br>
+            <strong>Jiang Liu*</strong>,
+            Srivathsa Pasumarthi*, Ben Duffy, Enhao Gong, Keshav Datta, Greg Zaharchuk (*equal contribution)
+            <br>
+            <em>IEEE Transactions on Medical Imaging (TMI)</em>, 2022
+            <br>
+            <a href="https://ieeexplore.ieee.org/document/10081095">IEEE</a> /
+            <a href="https://arxiv.org/abs/2204.13738">arXiv</a> /
+            <a href="bibs/Liu_2023_one.bib">bibtex</a>
+            <br>
+            <p></p>
+            <p>
+              In this paper, we formulate missing data imputation as a <b>sequence-to-sequence</b> learning problem and
+              propose a multi-contrast multi-scale Transformer (MMT), which can take <b><em>any</em></b> subset of input contrasts and
+              synthesize those that are missing. It can efficiently capture intra- and inter-contrast dependencies for accurate image synthesis.
+              Moreover, MMT is inherently <strong>interpretable</strong>. It allows us to understand the importance of each
+              input contrast in different regions by analyzing the in-built attention maps of MMT decoder.
+          </td>
+        </tr>
+
+
+
+
+
+        <tr onmouseout="poly_stop()" onmouseover="poly_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
               <div class="two" id="poly_image" style="opacity: 1;">
@@ -104,7 +152,7 @@
             <p></p>
             <p>
               In this work, instead of directly predicting the pixel-level segmentation masks, the problem of referring
-              image segmentation is formulated as sequential polygon generation, and the predicted polygons can be later
+              image segmentation is formulated as <b>sequential polygon generation</b>, and the predicted polygons can be later
               converted into segmentation masks. This is enabled by a new sequence-to-sequence framework, Polygon
               Transformer (PolyFormer), which takes a sequence of image patches and text query tokens as input,
               and outputs a sequence of polygon vertices autoregressively. </p>
@@ -152,11 +200,9 @@
             <p>
               In this paper, we propose Segment and Complete defense (SAC),
               a general framework for defending object detectors against patch attacks
-              through detection and removal of adversarial patches.
-              Our experiments on COCO and xView datasets demonstrate that SAC achieves superior robustness even
+              through <b>detection and removal of adversarial patches</b>. SAC achieves superior robustness even
               under strong adaptive attacks with no reduction in performance on clean images, and generalizes well to
-              unseen patch shapes, attack budgets, and unseen attack methods. Furthermore, we present the APRICOT-Mask
-              dataset, which augments the APRICOT dataset with pixel-level annotations of adversarial patches. </p>
+              unseen patch shapes, attack budgets, and unseen attack methods. </p>
           </td>
         </tr>
         <tr onmouseout="mat_stop()" onmouseover="mat_start()">
@@ -205,49 +251,6 @@
           </td>
         </tr>
 
-         <tr onmouseout="mmt_stop()" onmouseover="mmt_start()">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id="mmt_image" style="opacity: 1;">
-                <img src="./images/mmt_2.png" width="160"></div>
-              <img src="./images/mmt_1.png" width="160">
-            </div>
-            <script type="text/javascript">
-              function mmt_start() {
-                document.getElementById('mmt_image').style.opacity = "0";
-              }
-
-              function mmt_stop() {
-                document.getElementById('mmt_image').style.opacity = "1";
-              }
-              mmt_stop()
-            </script>
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://arxiv.org/abs/2204.13738">
-              <papertitle> One Model to Synthesize Them All: Multi-contrast Multi-scale Transformer for Missing Data Imputation
-              </papertitle>
-            </a>
-            <br>
-            <strong>Jiang Liu</strong>,
-            Srivathsa Pasumarthi, Ben Duffy, Enhao Gong, Greg Zaharchuk, Keshav Datta
-            <br>
-            <em>Arxiv</em>, 2022
-            <br>
-            <a href="https://arxiv.org/pdf/2204.13738.pdf">PDF</a> /
-            <a href="https://arxiv.org/abs/2204.13738">arXiv</a> /
-            <a href="bibs/Liu_2022_one.bib">bibtex</a>
-            <br>
-            <p></p>
-            <p>
-              In this paper, we formulate missing data imputation as a sequence-to-sequence learning problem and
-              propose a multi-contrast multi-scale Transformer (MMT), which can take <em>any</em> subset of input contrasts and
-              synthesize those that are missing. Thanks to the proposed multi-contrast Swin Transformer blocks,
-              it can efficiently capture intra- and inter-contrast dependencies for accurate image synthesis.
-              Moreover, MMT is inherently <strong>interpretable</strong> . It allows us to understand the importance of each
-              input contrast in different regions by analyzing the in-built attention maps of Transformer blocks in the decoder.
-          </td>
-        </tr>
 
         <tr onmouseout="ijsat_stop()" onmouseover="ijsat_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
