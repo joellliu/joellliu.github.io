@@ -23,7 +23,7 @@
               <p>I am a 4-th year PhD student at <a href="https://engineering.jhu.edu/ece/">Department of Electrical and Computer Engineering</a>, <a href="https://www.jhu.edu/">Johns Hopkins University</a> (JHU),
                 advised by <a href="https://engineering.jhu.edu/ece/faculty/rama-chellappa/">Prof. Rama Chellappa</a>.
                 I am a member of <a href="https://aiem.jhu.edu">AIEM lab </a>, and  <a href=https://www.cis.jhu.edu/> CIS</a>.
-                I received my MSE degree from JHU in 2022, and BSE degree from <a href="https://www.au.tsinghua.edu.cn/">Department of Automation</a>, <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a> in 2019 advised by <a href="http://ivg.au.tsinghua.edu.cn/~jfeng/">Prof. Jianjiang Feng</a>
+                I received my MSE degree from JHU in 2021, and BSE degree from <a href="https://www.au.tsinghua.edu.cn/">Department of Automation</a>, <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a> in 2019 advised by <a href="http://ivg.au.tsinghua.edu.cn/~jfeng/">Prof. Jianjiang Feng</a>
                 and <a href="https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en">Prof. Jie Zhou</a>.
 
 
@@ -69,6 +69,52 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+                <tr onmouseout="ijsat_stop()" onmouseover="ijsat_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id="ijsat_image" style="opacity: 1;">
+                <img src="./images/ijsat_1.png" width="160"></div>
+              <img src="./images/ijsat_2.png" width="160">
+            </div>
+            <script type="text/javascript">
+              function ijsat_start() {
+                document.getElementById('ijsat_image').style.opacity = "0";
+              }
+
+              function ijsat_stop() {
+                document.getElementById('ijsat_image').style.opacity = "1";
+              }
+              ijsat_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://ieeexplore.ieee.org/abstract/document/10155464">
+              <papertitle> Interpolated Joint Space Adversarial Training for Robust and Generalizable Defenses
+              </papertitle>
+            </a>
+            <br>
+            Chun Pong Lau,
+            <strong>Jiang Liu</strong>,
+            Hossein Souri, Wei-An Lin, Soheil Feizi, Rama Chellappa
+            <br>
+            <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em>, 2023
+            <br>
+            <a href="https://ieeexplore.ieee.org/abstract/document/10155464">IEEE</a> /
+            <a href="https://arxiv.org/abs/2112.06323">arXiv</a> /
+            <a href="bibs/lau_2021_ijsat.bib">bibtex</a>
+            <br>
+            <p></p>
+            <p>
+              We propose a novel threat model called Joint Space Threat Model (JSTM), which exploit the underlying manifold information with Normalizing Flow,
+              ensuring that exact manifold assumption holds. Under JSTM, we develop novel adversarial attacks and defenses. Furthermore,
+              we propose the Robust Mixup strategy in which we maximize the adversity of the interpolated images and gain robustness and prevent
+              overfitting.
+          </td>
+        </tr>
+
+
 
                  <tr onmouseout="mmt_stop()" onmouseover="mmt_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
@@ -249,50 +295,6 @@
               MAT allows robust models to explore a larger space of adversarial samples, and
               find more robust feature spaces and decision boundaries. We show that MAT can improve model robustness for
               both <strong>single</strong> and <strong>multiple</strong> perturbations. </p>
-          </td>
-        </tr>
-
-
-        <tr onmouseout="ijsat_stop()" onmouseover="ijsat_start()">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id="ijsat_image" style="opacity: 1;">
-                <img src="./images/ijsat_1.png" width="160"></div>
-              <img src="./images/ijsat_2.png" width="160">
-            </div>
-            <script type="text/javascript">
-              function ijsat_start() {
-                document.getElementById('ijsat_image').style.opacity = "0";
-              }
-
-              function ijsat_stop() {
-                document.getElementById('ijsat_image').style.opacity = "1";
-              }
-              ijsat_stop()
-            </script>
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://arxiv.org/abs/2112.06323">
-              <papertitle> Interpolated Joint Space Adversarial Training for Robust and Generalizable Defenses
-              </papertitle>
-            </a>
-            <br>
-            Chun Pong Lau,
-            <strong>Jiang Liu</strong>,
-            Hossein Souri, Wei-An Lin, Soheil Feizi, Rama Chellappa
-            <br>
-            <em>Arxiv</em>, 2021
-            <br>
-            <a href="https://arxiv.org/pdf/2112.06323.pdf">PDF</a> /
-            <a href="https://arxiv.org/abs/2112.06323">arXiv</a> /
-            <a href="bibs/lau_2021_ijsat.bib">bibtex</a>
-            <br>
-            <p></p>
-            <p>
-              We propose a novel threat model called Joint Space Threat Model (JSTM), which exploit the underlying manifold information with Normalizing Flow,
-              ensuring that exact manifold assumption holds. Under JSTM, we develop novel adversarial attacks and defenses. Furthermore,
-              we propose the Robust Mixup strategy in which we maximize the adversity of the interpolated images and gain robustness and prevent
-              overfitting.
           </td>
         </tr>
 
