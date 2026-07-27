@@ -361,6 +361,14 @@ h2 {
   margin-top: 7px;
 }
 
+.news-section:not(.show-all-news) li:nth-child(n+6) {
+  display: none;
+}
+
+.news-actions {
+  margin-top: 12px;
+}
+
 .works-heading td {
   padding-bottom: 6px;
 }
@@ -399,7 +407,7 @@ h2 {
   text-transform: uppercase;
 }
 
-#publications:not(.show-all) > tbody > tr:nth-child(n+13) {
+#publications:not(.show-all) > tbody > tr:not(.featured-work) {
   display: none;
 }
 
@@ -408,7 +416,8 @@ h2 {
   text-align: center;
 }
 
-.works-actions button {
+.works-actions button,
+.news-actions button {
   padding: 8px 15px;
   border: 1px solid #b9c2cc;
   border-radius: 7px;
@@ -418,7 +427,8 @@ h2 {
   font: inherit;
 }
 
-.works-actions button:hover {
+.works-actions button:hover,
+.news-actions button:hover {
   border-color: var(--link);
   background: var(--surface);
 }
